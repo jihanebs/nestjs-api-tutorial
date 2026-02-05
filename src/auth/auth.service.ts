@@ -16,11 +16,11 @@ export class AuthService {
         hash,
       },
     });
+    delete user.hash;
     // return the saved user
     return user;
   }
-  login(dto: AuthDto) {
+  login() {
     return 'I am signed in';
   }
-
 }
